@@ -1,0 +1,75 @@
+/* Start Header section */
+header ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;left: 0;
+    top: 100%;
+    z-index: 2000;
+    background: var(--gradient-white-bg2);
+    border-top: 2px solid rgba(248, 202, 202, .7);
+    transform: translateY(-150%);
+    transition: 0.4s ease;
+}
+header ul.active{
+    transform: translateY(0);
+    /* transform: scale(1); */
+}
+header li{
+    margin: 12px 0;
+}
+#bar{
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header #bar:hover{
+    background: var(--gradient-color-bg);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* End Header section */
+
+
+/* Start Home section */
+.home .container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.home .home-info{
+    margin-bottom: 40px;
+} 
+/* End Home section */
+
+/* Start about section */
+.about .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about .about-info{
+    margin-bottom: 40px;
+} 
+/* End about section */
+.touch .container span{
+    display: none;
+}
+.touch .container{
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.portofolio .port-btns-contents .contentOne{
+    grid-template-columns: 1fr;
+}
+
+.contact form .name input{
+    width: 100%;
+}
+.contact form .name input:first-child{
+    margin-bottom: 13px;
+}
